@@ -1,0 +1,11 @@
+<div class="snack-container">
+    <div class="text">
+      <mat-icon class="material-icons-outlined text-icon">{{this.icon}}</mat-icon>
+      {{data.message}}
+  </div>
+  <div class="dismiss">
+    <button mat-icon-button (click)="sbRef.dismiss()">
+          <mat-icon class="close-icon">close</mat-icon>
+    </button>
+  </div>
+</div>

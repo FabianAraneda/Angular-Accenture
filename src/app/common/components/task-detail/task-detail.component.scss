@@ -1,0 +1,10 @@
+mat-dialog-content{
+    display: grid;
+}
+.dialog-btn-wrapper {
+    width: 100%;
+    button:nth-child(2) {
+      float: right;
+    }
+  }
+  

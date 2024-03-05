@@ -1,0 +1,34 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Juan",
+      "lastname": "Pérez",
+      "email": "juan@email.com",
+      "password": "123456"
+    },
+    {
+      "id": "2",
+      "name": "María",
+      "lastname": "Gómez",
+      "email": "maria@email.com",
+      "password": "123456"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "3",
+      "title": "Llamar a Juan",
+      "description": "Confirmar reunión",
+      "completed": false,
+      "userId": 2
+    },
+    {
+      "id": "3730",
+      "title": "test",
+      "description": "tarea de prueba",
+      "completed": false,
+      "userId": 1
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+.task-wrapper{
+    height: 100vh;
+    width: 95vw;
+    margin: auto;
+    .header{
+        padding-top: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+    .user-name{
+        p{
+            margin-left: 1rem;
+            font-size: 20px;
+            font-weight: 400;
+        }
+    }
+    .table-wrapper{
+        .mat-card-detail {
+            overflow-y: hidden;
+            overflow-x: auto;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+        }
+        .table-actions{
+            display: flex;
+            .searcher {
+                align-items: center;
+                font-weight: 500;
+                display: flex;
+              
+                input {
+                    border-radius: 8px;
+                    border: solid 1px lightgray;
+                    padding: 0.5rem 1rem;
+                    margin-right: 1rem;
+                    height: 27px;
+              
+                    &:focus-visible {
+                        outline: solid 1px black;
+                    }
+                }
+              
+            }
+            .header-action {
+                display: flex;
+                flex-direction: row-reverse;
+                button {
+                    font-style: normal;
+                    border-radius: 8px;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 18px;
+                    padding: 1rem;
+                    height: 44px;
+                    box-shadow: none;
+                    letter-spacing: 0.5px;
+                    width: 184px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                mat-icon{
+                    height: 24px;
+                    width: 24px;
+                    font-size: 24px;
+                }
+            }
+        }
+        .mat-mdc-table {
+            width: 100%;
+            vertical-align: middle;
+            border-bottom: 1px solid grey;
+          
+            .mat-header-row {
+                background-color: grey;
+                font-weight: bold;
+            }
+          
+            th {
+                width: 40vw;
+                font-weight: 500;
+        
+                .mat-icon {
+                    font-size: 12px;
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    left: 30%;
+                    transform: translate(0, -50%);
+                    width: 12px;
+                    height: 12px;
+                }
+            }
+          
+            tr {
+                height: 52px !important;
+        
+                &:nth-child(odd), &:nth-child(odd):hover {
+                    background: #F8F9FA
+                }
+        
+                &:nth-child(even), &:nth-child(even):hover {
+                    background: #FFF
+                }
+            }
+          
+            td {
+                color: #16191B;
+                font-weight: 400;
+                .small {
+                    color: #5C6570;
+                }
+                .icon-wrapper{
+                    gap: 1rem;
+                    display: flex;
+                    mat-icon{
+                        cursor: pointer;
+                        gap: 1rem;
+                    }
+                    .edit-icon{
+                        color: #00A3E0;
+                    }
+                    .delete-icon{
+                        color: #ef3333;
+                    }
+                    .complete-icon{
+                        color: green;
+                    }
+                }
+                .pending{
+                    background-color: rgb(140, 47, 47);
+                    color: rgb(74, 5, 5);
+                }
+                .completed{
+                    background-color: rgb(70 151 70);
+                    color: rgb(6 57 6);
+                }
+                span{
+                    padding: 0.3rem;
+                    border-radius: 10px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+.container-no-data-accordion{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 5rem 0rem 5rem 0rem;
+}

@@ -1,0 +1,23 @@
+<div class="dialog-wrapper">
+    <div>
+        <h1 mat-dialog-title>{{data.title}}</h1>
+    </div>
+    <form [formGroup]="taskForm">
+        <mat-dialog-content>
+            <mat-form-field>
+                <mat-label>Titulo</mat-label>
+                <input matInput formControlName="title">
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Descripción</mat-label>
+                <textarea matInput formControlName="description"></textarea>
+            </mat-form-field>
+        </mat-dialog-content>
+        <mat-dialog-actions>
+            <div class="dialog-btn-wrapper">
+                <button mat-button color="warn" (click)="closeDialog()">Cancelar</button>
+                <button mat-button color="primary" (click)="save()">Guardar</button>
+            </div>
+        </mat-dialog-actions>
+    </form>
+</div>

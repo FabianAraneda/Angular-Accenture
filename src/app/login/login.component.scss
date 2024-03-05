@@ -1,0 +1,21 @@
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    height: 100vh;
+    background-image: url('../../assets/img/fondo.jpg');
+    .login-form-wrapper{
+        display: grid;
+        width: 30vw;
+        height: 30vh;
+        background-color: rgb(238 136 15 / 52%);
+        padding: 3rem;
+        border-radius: 10px;
+        .btn-wrapper{
+            button{
+                width: 100%;
+            }
+        }
+    }
+}
